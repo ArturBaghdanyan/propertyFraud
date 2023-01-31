@@ -1,7 +1,7 @@
 .protect {
   @apply flex flex-col items-center mt-52 md:mx-24 lg:mx-36 xl:mx-80;
   .protect_title {
-    @apply text-2xl text-center text-[#4E4E4E] font-medium md:text-4xl;
+    @apply text-3xl text-center text-[#4E4E4E] px-4 font-medium md:text-4xl;
     > h1 span {
       @apply text-[#0BAEB9];
     }

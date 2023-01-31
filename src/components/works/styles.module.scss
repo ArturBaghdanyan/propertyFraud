@@ -1,5 +1,5 @@
 .root {
-  @apply px-5 mt-5 relative flex flex-col items-center md:px-10 lg:flex-row lg:justify-end;
+  @apply px-5 mt-5 relative flex flex-col items-center md:px-10 lg:flex-row lg:justify-end lg:mx-10 lg:px-0;
   .image {
     @apply w-4/5 relative z-10 md:w-3/5 lg:absolute lg:w-2/5 lg:left-10;
     > img {
@@ -12,11 +12,11 @@
     .square {
       @apply flex flex-col justify-center mx-auto text-white
              pb-8 rounded-xl bg-gradient-to-b from-gradient-start to-[#0BAEB9]
-             lg:flex-row lg:justify-end lg:items-center lg:py-24;// text font-size
+             lg:flex-row lg:justify-end lg:items-center lg:py-24;
       .wrapper {
         @apply lg:w-7/12 lg:flex lg:flex-col lg:items-start;
         .title {
-          @apply text-center text-2xl mt-28 md:mt-32 lg:mt-0;
+          @apply text-center text-2xl mt-28 md:mt-32 lg:mt-0 lg:text-3xl;
         }
         .border {
           @apply w-28 h-1 border-x-2 bg-[#EAEEEF] mx-auto mt-5 rounded-lg md:mt-6 lg:mt-8 xl:mt-7 lg:mx-0;

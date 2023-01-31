@@ -1,3 +1,4 @@
+// eslint-disable-next-line prettier/prettier
 import bgImage from '../../assets/works_image/background.png';
 import image from '../../assets/works_image/image.png';
 

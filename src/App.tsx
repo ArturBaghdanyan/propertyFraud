@@ -2,6 +2,7 @@ import React from 'react';
 
 import './App.css';
 import Header from './components/header/header';
+import Protection from './components/home_protection/protection';
 import TargetProperty from './components/main/target';
 import Protect from './components/protected/protect';
 import Address from './components/section/address';
@@ -19,6 +20,7 @@ function App() {
       {/*<Victims />*/}
       <Protect />
       <MyList />
+      <Protection />
     </div>
   );
 }

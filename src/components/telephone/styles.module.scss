@@ -13,21 +13,12 @@
     @apply mt-5 text-[#95A1A1] text-base text-center mx-4;
   }
   .list_columns {
-    @apply mt-20 grid gap-y-8 grid-cols-1 md:grid-rows-4 md:grid-cols-6;
+    @apply mt-20 flex flex-col gap-y-8 md:flex-row; //grid-cols-1 md:grid-rows-4 md:grid-cols-6
     .list_image {
       @apply my-16 mx-auto;
     }
   .rows {
-    @apply flex flex-col md:row-span-2 md:col-span-2;
-    .item_01 {
-      @apply md:row-start-1;
-    }
-    .item_02 {
-      @apply md:row-start-2 md:col-start-3;
-    }
-    .item_03 {
-      @apply md:row-start-1 md:col-start-5;
-    }
+    @apply flex flex-col;
     .number {
       @apply text-[#0BAEB9] text-center text-3xl;
     }
