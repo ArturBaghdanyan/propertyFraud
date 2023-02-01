@@ -1,0 +1,14 @@
+.outer {
+  @apply h-screen mt-32 mx-4 bg-cover bg-no-repeat bg-center rounded-xl relative
+          md:mx-6 lg:mx-8 xl:mx-32 bg-gradient-to-b from-transparent to-[#0BAEB9];
+  .outer_container {
+    @apply w-full flex flex-col justify-center md:pt-56 absolute xl:bottom-0;
+    .outer_text {
+      @apply text-2xl text-center text-white pt-52 md:px-14 md:text-4xl lg:px-24 xl:px-48;
+    }
+    .outer_footer {
+      @apply w-64 h-16 flex items-center justify-center mx-auto text-white mt-4
+             rounded-full bg-white bg-opacity-40 shadow-2xl text-xl md:mt-6 md:mb-16;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.prices {
+  @apply flex flex-col justify-center text-center;
+  .prices_title {
+    @apply flex flex-col text-center px-4 mt-24;
+    > h1 {
+      @apply text-2xl;
+      > span {
+        @apply text-[#0BAEB9];
+      }
+      .border {
+        @apply w-28 h-1 border-x-2 bg-[#EAEEEF] mx-auto mt-5 rounded-lg md:mt-6 lg:mt-8 xl:mt-7 lg:mx-0;
+      }
+      > p {
+        @apply text-center;
+      }
+    }
+  }
+  .list {
+    @apply mt-9 px-8 rounded-lg;
+    .list_header {
+      @apply flex flex-col text-center mx-auto;
+      .list_price {
+        @apply text-[#0BAEB9] text-3xl;
+      }
+      .list_title {
+        @apply text-center mt-4 px-24;
+        .title_text {
+          @apply text-xl text-[#4E4E4E];
+        }
+      }
+    }
+  }
+}

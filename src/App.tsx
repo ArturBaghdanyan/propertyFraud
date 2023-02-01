@@ -1,9 +1,11 @@
 import React from 'react';
 
 import './App.css';
+import Family from './components/family/family';
 import Header from './components/header/header';
 import Protection from './components/home_protection/protection';
 import TargetProperty from './components/main/target';
+import Pricing from './components/pricing/pricing';
 import Protect from './components/protected/protect';
 import Address from './components/section/address';
 import MyList from './components/telephone/telephone';
@@ -21,6 +23,8 @@ function App() {
       <Protect />
       <MyList />
       <Protection />
+      <Pricing />
+      <Family />
     </div>
   );
 }

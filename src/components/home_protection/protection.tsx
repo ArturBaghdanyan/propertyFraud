@@ -9,23 +9,25 @@ function Protection() {
       <div className={style.container_image}>
         <img src={smartphones} alt="" />
       </div>
-      <div className={style.columns}>
-        <div className={style.title}>
-          <h1>
-            <span>Home Protection</span> in your pocket. Download the App
-          </h1>
-        </div>
-        <div className={style.border}></div>
-        <div className={style.text}>
-          <p>
-            Download the Title Guardian mobile App from the App Store or Google
-            Play to make protecting your home even easier. Registration is
-            simple, secure and fast.
-          </p>
-        </div>
-        <div className={style.footer}>
-          <img src={appstore} alt="" />
-          <img src={google_pay} alt="" />
+      <div className={style.rows}>
+        <div className={style.columns}>
+          <div className={style.title}>
+            <h1>
+              <span>Home Protection</span> in your pocket. Download the App
+            </h1>
+          </div>
+          <div className={style.border}></div>
+          <div className={style.text}>
+            <p>
+              Download the Title Guardian mobile App from the App Store or
+              Google Play to make protecting your home even easier. Registration
+              is simple, secure and fast.
+            </p>
+          </div>
+          <div className={style.footer}>
+            <img src={appstore} alt="" />
+            <img src={google_pay} alt="" />
+          </div>
         </div>
       </div>
     </div>
