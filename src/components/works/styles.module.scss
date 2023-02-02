@@ -1,5 +1,5 @@
 .root {
-  @apply px-5 mt-5 relative flex flex-col items-center md:px-10 lg:flex-row lg:justify-end lg:mx-10 lg:px-0;
+  @apply mt-5 relative flex flex-col items-center lg:flex-row lg:justify-end;
   .image {
     @apply w-4/5 relative z-10 md:w-3/5 lg:absolute lg:w-2/5 lg:left-10;
     > img {
@@ -10,7 +10,7 @@
     @apply w-full -mt-14 lg:mt-0 lg:w-11/12 bg-cover rounded-xl bg-no-repeat bg-center
            opacity-80;
     .square {
-      @apply flex flex-col justify-center mx-auto text-white
+      @apply flex flex-col justify-center text-white
              pb-8 rounded-xl bg-gradient-to-b from-gradient-start to-[#0BAEB9]
              lg:flex-row lg:justify-end lg:items-center lg:py-24;
       .wrapper {

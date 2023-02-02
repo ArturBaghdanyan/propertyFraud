@@ -2,6 +2,7 @@ import React from 'react';
 
 import './App.css';
 import Family from './components/family/family';
+import Footer from './components/footer/footer';
 import Header from './components/header/header';
 import Protection from './components/home_protection/protection';
 import TargetProperty from './components/main/target';
@@ -25,6 +26,7 @@ function App() {
       <Protection />
       <Pricing />
       <Family />
+      <Footer />
     </div>
   );
 }

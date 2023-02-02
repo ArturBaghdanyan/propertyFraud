@@ -4,7 +4,10 @@ import style from './styles.module.scss';
 
 function Family() {
   return (
-    <div style={{ backgroundImage: `url(${bgImage})` }} className={style.outer}>
+    <div
+      style={{ backgroundImage: `url(${bgImage})` }}
+      className={`${style.outer} container_spacing`}
+    >
       <div className={style.outer_container}>
         <div className={style.outer_text}>
           <p>

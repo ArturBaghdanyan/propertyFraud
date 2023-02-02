@@ -5,7 +5,7 @@ import smartphones from '../../assets/protection_images/smartphones.png';
 import style from './styles.module.scss';
 function Protection() {
   return (
-    <div className={style.container}>
+    <div className={`${style.container} container_spacing`}>
       <div className={style.container_image}>
         <img src={smartphones} alt="" />
       </div>

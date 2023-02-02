@@ -36,10 +36,7 @@ export interface IPrice {
       text: string;
     }
   ];
-  footer: {
-    id: number;
-    text: string;
-  };
+  actionButton: string;
 }
 export const priceList: IPrice[] = [
   {
@@ -56,36 +53,36 @@ export const priceList: IPrice[] = [
       {
         id: 2,
         icon: vector,
-        text: '24/7 activity monitoring ',
+        text: 'FREE copy of your title deeds ',
       },
       {
         id: 3,
         icon: vector,
-        text: '24/7 activity monitoring ',
+        text: 'Full 24hr support package ',
       },
       {
         id: 4,
         icon: vector,
-        text: '24/7 activity monitoring ',
+        text: 'Unlimited joint Guardians ',
       },
       {
         id: 5,
         icon: vector,
-        text: '24/7 activity monitoring ',
+        text: 'Property valuation tracking  ',
       },
       {
         id: 6,
         icon: vector,
-        text: '24/7 activity monitoring ',
+        text: 'Less than £2.50 per month ',
       },
     ],
-    footer: { id: 1, text: 'Purchase' },
+    actionButton: 'Purchase',
   },
   {
     id: 2,
     price: '£29.99',
-    title_text: 'Starter Plan',
-    title_text2: 'Annual Subscription',
+    title_text: 'Portfolio Plan',
+    title_text2: 'Covers 5+ Properties',
     columns: [
       {
         id: 1,
@@ -95,36 +92,36 @@ export const priceList: IPrice[] = [
       {
         id: 2,
         icon: vector,
-        text: '24/7 activity monitoring ',
+        text: 'Protects your Portfolio ',
       },
       {
         id: 3,
         icon: vector,
-        text: '24/7 activity monitoring ',
+        text: 'FREE copy of your title deeds ',
       },
       {
         id: 4,
         icon: vector,
-        text: '24/7 activity monitoring ',
+        text: 'Full 24hr support package ',
       },
       {
         id: 5,
         icon: vector,
-        text: '24/7 activity monitoring ',
+        text: 'Unlimited joint Guardians ',
       },
       {
         id: 6,
         icon: vector,
-        text: '24/7 activity monitoring ',
+        text: 'Property valuation tracking  ',
       },
     ],
-    footer: { id: 2, text: 'Purchase' },
+    actionButton: 'Contact Us',
   },
   {
     id: 3,
     price: '£29.99',
-    title_text: 'Starter Plan',
-    title_text2: 'Annual Subscription',
+    title_text: 'Lifetime Plan',
+    title_text2: 'Homeowner life term Plan',
     columns: [
       {
         id: 1,
@@ -134,29 +131,29 @@ export const priceList: IPrice[] = [
       {
         id: 2,
         icon: vector,
-        text: '24/7 activity monitoring ',
+        text: 'FREE copy of your title deeds ',
       },
       {
         id: 3,
         icon: vector,
-        text: '24/7 activity monitoring ',
+        text: 'Full 24hr support package ',
       },
       {
         id: 4,
         icon: vector,
-        text: '24/7 activity monitoring ',
+        text: 'Unlimited joint Guardians ',
       },
       {
         id: 5,
         icon: vector,
-        text: '24/7 activity monitoring ',
+        text: 'Transfers when you move home ',
       },
       {
         id: 6,
         icon: vector,
-        text: '24/7 activity monitoring ',
+        text: 'Property valuation tracking  ',
       },
     ],
-    footer: { id: 3, text: 'Purchase' },
+    actionButton: 'Contact Us',
   },
 ];

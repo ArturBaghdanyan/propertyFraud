@@ -1,0 +1,15 @@
+.footer {
+  @apply flex flex-col mt-24;
+  .footer_header {
+    @apply mx-auto;
+  }
+  .footer_list {
+    @apply flex flex-col gap-y-12 items-center justify-center px-20 py-16;
+    .footer_piece {
+      @apply text-center gap-y-4;
+      > h3 {
+        @apply text-xl text-[#4E4E4E];
+      }
+    }
+  }
+}

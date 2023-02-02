@@ -6,7 +6,7 @@ import style from './styles.module.scss';
 
 function Works() {
   return (
-    <div className={style.root}>
+    <div className={`${style.root} container_spacing`}>
       <div className={style.image}>
         <img src={image} alt="" />
       </div>
