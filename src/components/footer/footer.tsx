@@ -1,5 +1,8 @@
 import { IFooter, footerlist, mobileAppUrl } from './footerList';
+import facebook from '../../assets/footer_icons/facebook.svg';
 import header from '../../assets/footer_icons/header.svg';
+import instagram from '../../assets/footer_icons/instagram.svg';
+import twitter from '../../assets/footer_icons/twitter.svg';
 
 import style from './style.module.scss';
 function Footer() {
@@ -23,6 +26,16 @@ function Footer() {
           <h3>{mobileAppUrl.title}</h3>
           <img src={mobileAppUrl.appStoreIcon} alt="" />
           <img src={mobileAppUrl.gpIcon} alt="" />
+        </div>
+      </div>
+      <div className={style.footer_footerText}>
+        <div className={style.footer_internet}>
+          <img src={facebook} alt="facebook" />
+          <img src={instagram} alt="instagram" />
+          <img src={twitter} alt="twitter" />
+        </div>
+        <div className={style.text}>
+          © 2022 First Guardian Ltd. All rights reserved
         </div>
       </div>
     </div>
