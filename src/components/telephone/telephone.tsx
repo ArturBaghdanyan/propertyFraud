@@ -4,11 +4,11 @@ import telephone from '../../assets/telephone_images/telephone.png';
 import style from './styles.module.scss';
 function MyList() {
   return (
-    <div className={style.list}>
+    <div className={`${style.list}`}>
       <div className={style.list_title}>
-        <h1>
+        <h2>
           <span>Protect</span> Your Property
-        </h1>
+        </h2>
       </div>
       <div className={style.border}></div>
       <div className={style.list_text}>

@@ -1,10 +1,11 @@
 .outer {
-  @apply h-screen mt-32 bg-cover bg-no-repeat bg-center rounded-xl relative
+  @apply flex items-end h-screen mt-32 bg-cover bg-no-repeat bg-center rounded-xl relative
          bg-gradient-to-b from-transparent to-[#0BAEB9];
   .outer_container {
-    @apply w-full flex flex-col justify-center md:pt-56 absolute xl:bottom-0;
+    @apply w-full flex flex-col justify-end;
     .outer_text {
-      @apply text-2xl text-center text-white pt-52 md:px-14 md:text-4xl lg:px-24 xl:px-48;
+      @apply text-2xl text-center text-white mx-auto md:w-3/4 md:text-3xl
+             lg:w-4/5 xl:w-8/12 xl:px-0 xl:text-3xl;
     }
     .outer_footer {
       @apply w-64 h-16 flex items-center justify-center mx-auto text-white mt-4

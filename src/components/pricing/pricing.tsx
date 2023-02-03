@@ -10,10 +10,8 @@ function Pricing() {
         </h1>
         <div className={style.border}></div>
         <div className={style.price_text}>
-          <p>
-            There are 3 subscription plans to suit your personal circumstances.
-            Select your required plan and start below.
-          </p>
+          There are 3 subscription plans to suit your personal circumstances.
+          Select your required plan and start below.
         </div>
       </div>
       <div className={style.list}>
