@@ -1,6 +1,31 @@
 .header {
-  @apply flex w-full bg-[#FFFFFF];
+  @apply flex justify-between w-full bg-red-500 pt-6 md:w-11/12;
   .header_icon {
-    @apply text-white bg-red-500;
+    @apply text-white;
+  }
+  nav {
+    @apply hidden lg:flex lg:items-center lg:mx-auto lg:text-white lg:gap-x-6;
+    > p {
+      @apply border-b-2;
+    }
+  }
+  .header_menu {
+    @apply flex items-center text-white justify-end gap-x-9;
+    .header_registration {
+      @apply flex justify-between items-center gap-x-5;
+      .sign_in {
+        @apply hidden md:block;
+      }
+      .register {
+        @apply hidden md:block md:w-20 md:h-9 md:bg-white md:text-black
+        md:rounded-full md:flex md:items-center md:justify-center;
+      }
+    }
+    button {
+      @apply flex flex-col items-end;
+    }
+    nav {
+      @apply flex flex-col text-white items-center cursor-pointer bg-gray-400 gap-y-4;
+    }
   }
 }
