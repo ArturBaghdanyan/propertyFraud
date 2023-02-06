@@ -1,6 +1,6 @@
-import React from 'react';
-
 import './App.css';
+import { useState } from 'react';
+
 import Family from './components/family/family';
 import Footer from './components/footer/footer';
 import Header from './components/header/header';
@@ -14,10 +14,12 @@ import MyList from './components/telephone/telephone';
 import Works from './components/works/works';
 
 function App() {
+  const [isHeaderFixed, setIsHeaderFixed] = useState<boolean>(false);
+
   return (
     <div className="App">
-      <Header />
-      <Address />
+      <Header isHeaderFixed={isHeaderFixed} />
+      <Address setIsHeaderFixed={setIsHeaderFixed} />
       <TargetProperty />
       <Works />
       {/*<Victims />*/}

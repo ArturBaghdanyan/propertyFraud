@@ -1,14 +1,30 @@
+import { Dispatch, FC, SetStateAction, useEffect, useRef } from 'react';
+
 import { Images } from './images';
 import bgImage from '../../assets/header_icons/background.png';
 import apple from '../../assets/section_icons/apple.svg';
 import search from '../../assets/section_icons/search.svg';
+import { useIsVisible } from '../hooks/useIsVisible';
 
 import styles from './styles.module.scss';
-function Address() {
+
+type AddressProps = {
+  setIsHeaderFixed: Dispatch<SetStateAction<boolean>>;
+};
+
+const Address: FC<AddressProps> = ({ setIsHeaderFixed }) => {
+  const ref = useRef(null);
+
+  const isVisible = useIsVisible(ref);
+  useEffect(() => {
+    setIsHeaderFixed(!isVisible);
+  }, [isVisible]);
+
   return (
     <div
       className={styles.address_container}
       style={{ backgroundImage: `url(${bgImage})` }}
+      ref={ref}
     >
       <div className={styles.gradient}>
         <h1 className={styles.title_text}>
@@ -46,5 +62,5 @@ function Address() {
       </div>
     </div>
   );
-}
+};
 export default Address;

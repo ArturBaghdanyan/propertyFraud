@@ -1,31 +1,67 @@
-.header {
-  @apply flex justify-between w-full bg-red-500 pt-6 md:w-11/12;
-  .header_icon {
-    @apply text-white;
+.root {
+  @apply w-full absolute inset-x-0 z-20;
+  &.sticky {
+   @apply fixed shadow-lg bg-gray-200 md:w-11/12;
+  }
+  .header {
+    @apply flex justify-between items-center p-6;
+    .header_icon {
+      @apply text-white;
+    }
+
+    .nav {
+      @apply hidden lg:text-white lg:flex lg:items-center lg:mx-auto lg:text-white lg:gap-x-6;
+      > p {
+        @apply lg:border-b-2;
+      }
+    }
+    .scroll_nav {
+      @apply text-[#AAAEC1];
+      :first-child {
+        @apply text-[#4E4E4E];
+      }
+    }
+
+    .header_menu {
+      @apply flex items-center text-white justify-end gap-x-9;
+      .header_registration {
+        @apply flex justify-between items-center gap-x-5;
+        .sign_in {
+          @apply hidden md:block;
+        }
+        .scroll_sign_in {
+          @apply md:text-[#4E4E4E] md:block;
+        }
+        .register {
+          @apply hidden md:block md:w-20 md:h-9 md:bg-white md:text-black
+          md:rounded-full md:flex md:items-center md:justify-center;
+        }
+        .scroll_register {
+          @apply md:rounded-full md:bg-[#0BAEB9] md:text-white md:flex md:items-center;
+        }
+      }
+
+      button {
+        @apply flex flex-col items-end h-full;
+        > nav {
+          @apply flex flex-col text-white items-center cursor-pointer bg-gray-400 gap-y-4 lg:hidden;
+        }
+      }
+      .scroll_menu {
+        @apply md:hidden;
+      }
+    }
+  }
+}
+.mobile_menu {
+  @apply w-full fixed inset-0 z-20 bg-gray-200 p-6;
+  .title {
+    @apply flex justify-between;
+    button > img {
+      @apply w-5 h-5;
+    }
   }
   nav {
-    @apply hidden lg:flex lg:items-center lg:mx-auto lg:text-white lg:gap-x-6;
-    > p {
-      @apply border-b-2;
-    }
-  }
-  .header_menu {
-    @apply flex items-center text-white justify-end gap-x-9;
-    .header_registration {
-      @apply flex justify-between items-center gap-x-5;
-      .sign_in {
-        @apply hidden md:block;
-      }
-      .register {
-        @apply hidden md:block md:w-20 md:h-9 md:bg-white md:text-black
-        md:rounded-full md:flex md:items-center md:justify-center;
-      }
-    }
-    button {
-      @apply flex flex-col items-end;
-    }
-    nav {
-      @apply flex flex-col text-white items-center cursor-pointer bg-gray-400 gap-y-4;
-    }
+    @apply flex flex-col m-auto gap-y-5 items-center mt-12 text-xl;
   }
 }
