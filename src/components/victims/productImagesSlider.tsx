@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
-import { FreeMode, Pagination } from 'swiper';
+import { FreeMode } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import SlideNextButton from './swiper_click';
 import { IList } from './victimsList';
 
 import style from './styles.module.scss';
@@ -13,11 +14,8 @@ const ProductImagesSlider = (props: { images: IList[] }) => {
         loop={true}
         freeMode={true}
         autoHeight={true}
-        modules={[FreeMode, Pagination]}
+        modules={[FreeMode]}
         slidesPerView={1}
-        pagination={{
-          clickable: true,
-        }}
         breakpoints={{
           768: {
             slidesPerView: 2,
@@ -26,7 +24,7 @@ const ProductImagesSlider = (props: { images: IList[] }) => {
             slidesPerView: 3,
           },
           1366: {
-            slidesPerView: 4,
+            slidesPerView: 3.5,
           },
         }}
         spaceBetween={24}
@@ -48,6 +46,7 @@ const ProductImagesSlider = (props: { images: IList[] }) => {
           </SwiperSlide>
         ))}
       </Swiper>
+      <SlideNextButton />
     </>
   );
 };

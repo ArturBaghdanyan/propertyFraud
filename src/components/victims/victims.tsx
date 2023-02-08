@@ -1,4 +1,4 @@
-import ProductImagesSlider from './handleClick';
+import ProductImagesSlider from './productImagesSlider';
 import { list } from './victimsList';
 import bgImage from '../../assets/works_image/background.png';
 
@@ -10,19 +10,23 @@ const Victims = () => {
       style={{ backgroundImage: `url(${bgImage})` }}
       className={`${style.victims_wrapper} container_spacing`}
     >
-      <div className={style.victims_header}>
-        <div className={style.title}>
-          <h1>Victims of Property Fraud</h1>
+      <div className={style.victims_columns}>
+        <div className={style.victims_header}>
+          <div className={style.header_row}>
+            <div className={style.title}>
+              <h1>Victims of Property Fraud</h1>
+            </div>
+            <div className={style.border}></div>
+            <div className={style.victims_text}>
+              <p>
+                Property & title fraud is an invisible digital threat that
+                affects everyone. Here are just a few examples.
+              </p>
+            </div>
+          </div>
         </div>
-        <div className={style.border}></div>
-        <div className={style.victims_text}>
-          <p>
-            Property & title fraud is an invisible digital threat that affects
-            everyone. Here are just a few examples.
-          </p>
-        </div>
+        <ProductImagesSlider images={list} />
       </div>
-      <ProductImagesSlider images={list} />
     </div>
   );
 };

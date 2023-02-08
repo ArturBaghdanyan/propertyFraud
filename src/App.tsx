@@ -14,7 +14,7 @@ import Victims from './components/victims/victims';
 import Works from './components/works/works';
 import 'swiper/css';
 import 'swiper/css/free-mode';
-import 'swiper/css/pagination';
+
 function App() {
   const [isHeaderFixed, setIsHeaderFixed] = useState<boolean>(false);
 
