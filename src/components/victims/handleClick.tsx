@@ -1,33 +1,57 @@
-import { useState } from 'react';
+import PropTypes from 'prop-types';
+import { FreeMode, Pagination } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-import left from '../../assets/victims_image/left.svg';
-import right from '../../assets/victims_image/right.svg';
+import { IList } from './victimsList';
 
 import style from './styles.module.scss';
-export const HandleClick = () => {
-  //props: string
-  const [show, setShow] = useState(false);
 
-  function showElement() {
-    setShow(!show);
-  }
-  // let incrementCounter = () => setCount(count + 1); //props.image
-  // let decrementCounter = () => setCount(count - 1);
-  const buttonText = show ? (
-    <img src={left} alt="left" />
-  ) : (
-    <img src={right} alt="right" />
-  );
+const ProductImagesSlider = (props: { images: IList[] }) => {
   return (
-    <div className={style.button}>
-      {/*<button onClick={showElement}>*/}
-      {/*    <img src={left} alt="left"/>*/}
-      {/*</button>*/}
-      <button onClick={showElement}>{buttonText}</button>
-      {show ? <p>Hi</p> : ''}
-      {/*<button onClick={incrementCounter}>*/}
-      {/*    <img src={right} alt="right"/>*/}
-      {/*</button>*/}
-    </div>
+    <>
+      <Swiper
+        loop={true}
+        freeMode={true}
+        autoHeight={true}
+        modules={[FreeMode, Pagination]}
+        slidesPerView={1}
+        pagination={{
+          clickable: true,
+        }}
+        breakpoints={{
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+          1366: {
+            slidesPerView: 4,
+          },
+        }}
+        spaceBetween={24}
+        className={style.mySwiper}
+      >
+        {props.images.map((items: IList) => (
+          <SwiperSlide key={items.id} className={style.mySwiper_container}>
+            <div className={style.image}>
+              <img src={items.image} alt="image" />
+            </div>
+            <div className={style.mySwiper_rows}>
+              <div className={style.mySwiper_title}>
+                <h2>{items.title}</h2>
+              </div>
+              <div className={style.mySwiper_text}>
+                <p>{items.text}</p>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </>
   );
 };
+ProductImagesSlider.propTypes = {
+  images: PropTypes.array.isRequired,
+};
+export default ProductImagesSlider;

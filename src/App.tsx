@@ -10,9 +10,11 @@ import Pricing from './components/pricing/pricing';
 import Protect from './components/protected/protect';
 import Address from './components/section/address';
 import MyList from './components/telephone/telephone';
-// import Victims from './components/victims/victims';
+import Victims from './components/victims/victims';
 import Works from './components/works/works';
-
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/pagination';
 function App() {
   const [isHeaderFixed, setIsHeaderFixed] = useState<boolean>(false);
 
@@ -22,7 +24,7 @@ function App() {
       <Address setIsHeaderFixed={setIsHeaderFixed} />
       <TargetProperty />
       <Works />
-      {/*<Victims />*/}
+      <Victims />
       <Protect />
       <MyList />
       <Protection />
