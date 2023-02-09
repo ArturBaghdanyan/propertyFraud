@@ -1,7 +1,7 @@
 .root {
   @apply w-full absolute inset-x-0 z-20;
   &.sticky {
-   @apply w-11/12 fixed mx-auto shadow-lg bg-gray-200 md:w-11/12 xl:w-4/5;
+   @apply fixed shadow-lg bg-white;
   }
   .header {
     @apply flex justify-between items-center p-6;

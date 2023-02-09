@@ -27,12 +27,8 @@ const Header: FC<HeaderProps> = ({ isHeaderFixed }) => {
 
   return (
     <>
-      <div
-        className={`${style.root} ${
-          isHeaderFixed ? style.sticky : ''
-        } container_spacing`}
-      >
-        <div className={`${style.header}`}>
+      <div className={`${style.root} ${isHeaderFixed ? style.sticky : ''}`}>
+        <div className={`${style.header} container_spacing`}>
           <div className={style.header_icon}>
             {isHeaderFixed ? (
               <img src={logo_colored} alt="guardian" />

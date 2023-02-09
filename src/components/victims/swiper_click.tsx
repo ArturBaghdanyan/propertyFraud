@@ -5,9 +5,8 @@ import right from '../../assets/victims_image/right.svg';
 
 import style from './styles.module.scss';
 
-export default function SlideNextButton() {
+export default function SwiperButtons() {
   const swiper = useSwiper();
-
   return (
     <div className={`${style.click} ${style.victims_header}`}>
       <button onClick={() => swiper.slidePrev()}>

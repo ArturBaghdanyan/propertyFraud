@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { FreeMode } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import SlideNextButton from './swiper_click';
+import SwiperButtons from './swiper_click';
 import { IList } from './victimsList';
 
 import style from './styles.module.scss';
@@ -11,9 +11,8 @@ const ProductImagesSlider = (props: { images: IList[] }) => {
   return (
     <>
       <Swiper
-        loop={true}
-        freeMode={true}
-        autoHeight={true}
+        freeMode
+        autoHeight
         modules={[FreeMode]}
         slidesPerView={1}
         breakpoints={{
@@ -30,23 +29,25 @@ const ProductImagesSlider = (props: { images: IList[] }) => {
         spaceBetween={24}
         className={style.mySwiper}
       >
-        {props.images.map((items: IList) => (
-          <SwiperSlide key={items.id} className={style.mySwiper_container}>
-            <div className={style.image}>
-              <img src={items.image} alt="image" />
-            </div>
-            <div className={style.mySwiper_rows}>
-              <div className={style.mySwiper_title}>
-                <h2>{items.title}</h2>
+        <div>
+          {props.images.map((items: IList) => (
+            <SwiperSlide key={items.id} className={style.mySwiper_container}>
+              <div className={style.image}>
+                <img src={items.image} alt="image" />
               </div>
-              <div className={style.mySwiper_text}>
-                <p>{items.text}</p>
+              <div className={style.mySwiper_rows}>
+                <div className={style.mySwiper_title}>
+                  <h2>{items.title}</h2>
+                </div>
+                <div className={style.mySwiper_text}>
+                  <p>{items.text}</p>
+                </div>
               </div>
-            </div>
-          </SwiperSlide>
-        ))}
+            </SwiperSlide>
+          ))}
+        </div>
+        <SwiperButtons />
       </Swiper>
-      <SlideNextButton />
     </>
   );
 };

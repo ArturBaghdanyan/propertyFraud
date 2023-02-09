@@ -8,10 +8,10 @@ const Victims = () => {
   return (
     <div
       style={{ backgroundImage: `url(${bgImage})` }}
-      className={`${style.victims_wrapper} container_spacing`}
+      className={`${style.victims_wrapper}`}
     >
       <div className={style.victims_columns}>
-        <div className={style.victims_header}>
+        <div className={`${style.victims_header} container_spacing`}>
           <div className={style.header_row}>
             <div className={style.title}>
               <h1>Victims of Property Fraud</h1>
