@@ -8,7 +8,6 @@
     .header_icon {
       @apply text-white;
     }
-
     .nav {
       @apply hidden lg:text-white lg:flex lg:items-center lg:mx-auto lg:text-white lg:gap-x-6;
       > p {
@@ -21,7 +20,6 @@
         @apply text-[#4E4E4E];
       }
     }
-
     .header_menu {
       @apply flex items-center text-white justify-end gap-x-9;
       .header_registration {
@@ -49,6 +47,9 @@
       }
       .scroll_menu {
         @apply md:hidden;
+        > img {
+          @apply w-6 h-6;
+        }
       }
     }
   }

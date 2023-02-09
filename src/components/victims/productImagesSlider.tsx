@@ -46,8 +46,8 @@ const ProductImagesSlider = (props: { images: IList[] }) => {
             </SwiperSlide>
           ))}
         </div>
-        <SwiperButtons />
       </Swiper>
+      <SwiperButtons />
     </>
   );
 };

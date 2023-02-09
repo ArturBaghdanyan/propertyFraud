@@ -3,7 +3,8 @@ import { FC, useState } from 'react';
 import close from '../../assets/header_icons/close.png';
 import logo_colored from '../../assets/header_icons/logo_colored.svg';
 import logo_white from '../../assets/header_icons/logo_white.svg';
-import menu_icon from '../../assets/header_icons/menu.svg';
+import menu_black from '../../assets/header_icons/menu_black.png';
+import menu_white from '../../assets/header_icons/menu_white.svg';
 
 import style from './styles.module.scss';
 
@@ -13,18 +14,17 @@ type HeaderProps = {
 
 const Header: FC<HeaderProps> = ({ isHeaderFixed }) => {
   const [isMobileMenuOpened, setIsMobileMenuOpened] = useState(false);
-
-  const showElement = isMobileMenuOpened ? (
-    <img src={menu_icon} alt="menu" />
-  ) : (
-    <img src={menu_icon} alt="menu" />
-  );
   function handleClick() {
     setIsMobileMenuOpened(!isMobileMenuOpened);
   }
 
   const menu = ['Home', 'Property Fraud', 'FAQ', 'Contact'];
 
+  const showElement = isHeaderFixed ? (
+    <img src={menu_black} alt="menu" />
+  ) : (
+    <img src={menu_white} alt="menu" />
+  );
   return (
     <>
       <div className={`${style.root} ${isHeaderFixed ? style.sticky : ''}`}>

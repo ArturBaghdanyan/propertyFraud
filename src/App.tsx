@@ -17,7 +17,6 @@ import 'swiper/css/free-mode';
 
 function App() {
   const [isHeaderFixed, setIsHeaderFixed] = useState<boolean>(false);
-
   return (
     <div className="App">
       <Header isHeaderFixed={isHeaderFixed} />
