@@ -16,9 +16,9 @@
       }
   }
   .list {
-    @apply flex flex-col mt-9 gap-y-5 lg:gap-x-6 lg:flex-row; //grid grid-rows-3 lg:grid-cols-3 lg:grid-rows-1
+    @apply flex flex-col mt-9 gap-y-5 lg:gap-x-6 lg:flex-row;
     .list_columns {
-      @apply lg:w-full flex flex-col md:flex-row lg:flex-col border-2 rounded-lg; // lg:grid-cols-1 md:grid md:grid-cols-2 md:col-start-1 md:col-end-3
+      @apply lg:w-full flex flex-col md:flex-row lg:flex-col border-2 rounded-lg;
       .list_header {
         @apply h-48 p-6 flex flex-col items-center justify-center bg-[#FAFAFC]
         md:h-auto md:w-2/5 lg:h-44 lg:w-full;
