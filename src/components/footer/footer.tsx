@@ -1,8 +1,8 @@
-import { IFooter, footerlist, mobileAppUrl } from './footerList';
 import facebook from '../../assets/footer_icons/facebook.svg';
 import header from '../../assets/footer_icons/header.svg';
 import instagram from '../../assets/footer_icons/instagram.svg';
 import twitter from '../../assets/footer_icons/twitter.svg';
+import { IFooter, footerlist, mobileAppUrl } from '../../data/footerList';
 
 import style from './style.module.scss';
 function Footer() {

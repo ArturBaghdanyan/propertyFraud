@@ -1,7 +1,7 @@
-import family from '../../assets/victims_image/family.png';
-import home from '../../assets/victims_image/home.png';
-import model from '../../assets/victims_image/model.png';
-import person from '../../assets/victims_image/person.png';
+import family from '../assets/victims_image/family.png';
+import home from '../assets/victims_image/home.png';
+import model from '../assets/victims_image/model.png';
+import person from '../assets/victims_image/person.png';
 export interface IList {
   id: number;
   image: string;

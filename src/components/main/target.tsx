@@ -1,4 +1,4 @@
-import { arrayList, IList } from './arrayList';
+import { mainList, IList } from '../../data/mainList';
 
 import style from './styles.module.scss';
 function TargetProperty() {
@@ -17,7 +17,7 @@ function TargetProperty() {
         3 simple steps that can turn your world upside down
       </div>
       <div className={style.columns}>
-        {arrayList.map((items: IList) => (
+        {mainList.map((items: IList) => (
           <div
             key={items.id}
             className={`${style.columns_piece} ${

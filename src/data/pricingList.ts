@@ -1,4 +1,5 @@
-import vector from '../../assets/pricing_icons/vector.svg';
+import vector from '../assets/pricing_icons/vector.svg';
+
 export interface IPrice {
   id: number;
   price: string;

@@ -1,5 +1,5 @@
-import { list } from './list';
 import telephone from '../../assets/telephone_images/telephone.png';
+import { telephoneList } from '../../data/telephoneList';
 
 import style from './styles.module.scss';
 function MyList() {
@@ -22,7 +22,7 @@ function MyList() {
         <div className={style.list_image}>
           <img src={telephone} alt="telephone" />
         </div>
-        {list.map(items => (
+        {telephoneList.map(items => (
           <div
             key={items.id}
             className={`${style.rows} ${style[`item-${items.number}`]}`}

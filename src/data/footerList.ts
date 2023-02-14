@@ -1,5 +1,5 @@
-import AppStore from '../../assets/footer_icons/appstore.svg';
-import googlePay from '../../assets/footer_icons/googlepay.svg';
+import AppStore from '../assets/footer_icons/appstore.svg';
+import googlePay from '../assets/footer_icons/googlepay.svg';
 
 export interface IFooter {
   id: number;

@@ -1,6 +1,6 @@
-import home from '../../assets/main_icons/home.svg';
-import id_card from '../../assets/main_icons/id_card.svg';
-import people from '../../assets/main_icons/people.svg';
+import home from '../assets/main_icons/home.svg';
+import id_card from '../assets/main_icons/id_card.svg';
+import people from '../assets/main_icons/people.svg';
 
 export interface IList {
   id: number;
@@ -9,7 +9,7 @@ export interface IList {
   text: string;
   number: string;
 }
-export const arrayList: IList[] = [
+export const mainList: IList[] = [
   {
     id: 1,
     image: home,

@@ -1,4 +1,4 @@
-import { priceList } from './pricingList';
+import { priceList } from '../../data/pricingList';
 
 import style from './style.module.scss';
 function Pricing() {
@@ -15,24 +15,24 @@ function Pricing() {
         </div>
       </div>
       <div className={style.list}>
-        {priceList.map(items => (
-          <div key={items.id} className={style.list_columns}>
+        {priceList.map(item => (
+          <div key={item.id} className={style.list_columns}>
             <div className={style.list_header}>
-              <div className={style.list_price}>{items.price}</div>
+              <div className={style.list_price}>{item.price}</div>
               <div className={style.list_title}>
-                <p className={style.title_text}>{items.title_text}</p>
-                <p className="text-[#7E818F]">{items.title_text2}</p>
+                <p className={style.title_text}>{item.title_text}</p>
+                <p className="text-[#7E818F]">{item.title_text2}</p>
               </div>
             </div>
             <div className={style.piece}>
-              {Object.values(items.columns).map(item => (
+              {item.columns.map(i => (
                 <div key={`${Math.random()}`} className={style.list_row}>
-                  <img src={item.icon} alt="icon" />
-                  <span className="text-[#4E4E4E]">{item.text}</span>
+                  <img src={i.icon} alt="icon" />
+                  <span className="text-[#4E4E4E]">{i.text}</span>
                 </div>
               ))}
               <div className={style.list_footer}>
-                <button>{items.actionButton}</button>
+                <button>{item.actionButton}</button>
               </div>
             </div>
           </div>

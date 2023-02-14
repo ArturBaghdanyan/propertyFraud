@@ -3,7 +3,7 @@ export interface IList {
   number: string;
   text: string;
 }
-export const list: IList[] = [
+export const telephoneList: IList[] = [
   {
     id: 1,
     number: '01',

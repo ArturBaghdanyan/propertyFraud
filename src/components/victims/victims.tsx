@@ -1,6 +1,6 @@
 import ProductImagesSlider from './productImagesSlider';
-import { list } from './victimsList';
 import bgImage from '../../assets/works_image/background.png';
+import { list } from '../../data/victimsList';
 
 import style from './styles.module.scss';
 

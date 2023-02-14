@@ -3,7 +3,7 @@ import { FreeMode } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import SwiperButtons from './swiper_click';
-import { IList } from './victimsList';
+import { IList } from '../../data/victimsList';
 
 import style from './styles.module.scss';
 

@@ -1,10 +1,10 @@
 import { Dispatch, FC, SetStateAction, useEffect, useRef } from 'react';
 
-import { Images } from './images';
 import bgImage from '../../assets/header_icons/background.png';
 import apple from '../../assets/section_icons/apple.svg';
 import search from '../../assets/section_icons/search.svg';
-import { useIsVisible } from '../hooks/useIsVisible';
+import { HeroList } from '../../data/heroList';
+import { useIsVisible } from '../../hooks/useIsVisible';
 
 import styles from './styles.module.scss';
 
@@ -41,7 +41,7 @@ const Address: FC<AddressProps> = ({ setIsHeaderFixed }) => {
           />
         </label>
 
-        <Images />
+        <HeroList />
         <button>
           <img src={apple} alt="apple" />
           <span>Download Our App</span>
