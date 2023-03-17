@@ -1,0 +1,30 @@
+.root {
+  @apply mt-5 relative flex flex-col items-center lg:flex-row lg:justify-end;
+  .image {
+    @apply w-4/5 relative z-10 md:w-3/5 lg:absolute lg:w-2/5 lg:left-10;
+    > img {
+      @apply w-full;
+    }
+  }
+  .background {
+    @apply w-full -mt-14 lg:mt-0 lg:w-11/12 bg-cover rounded-xl bg-no-repeat bg-center
+           opacity-80;
+    .square {
+      @apply flex flex-col justify-center text-white
+             pb-8 rounded-xl bg-gradient-to-b from-gradient-start to-[#0BAEB9]
+             lg:flex-row lg:justify-end lg:items-center lg:py-24;
+      .wrapper {
+        @apply lg:w-7/12 lg:flex lg:flex-col lg:items-start;
+        .title {
+          @apply text-center text-2xl mt-28 md:mt-32 lg:mt-0 lg:text-3xl;
+        }
+        .border {
+          @apply w-28 h-1 border-x-2 bg-[#EAEEEF] mx-auto mt-5 rounded-lg md:mt-6 lg:mt-8 xl:mt-7 lg:mx-0;
+        }
+        .text {
+          @apply text-center px-6 mt-6 md:px-16 lg:text-start lg:pl-0 lg:pr-9;
+        }
+      }
+    }
+  }
+}

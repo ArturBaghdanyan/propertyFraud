@@ -1,0 +1,36 @@
+.container {
+  @apply min-h-screen relative mt-48 flex flex-col items-center bg-[#F4F8F9] lg:flex-row-reverse
+         lg:justify-end lg:pl-14 lg:gap-x-8;
+  .container_image {
+    @apply w-4/5 -mt-24 relative lg:w-1/2 md:-mt-44 lg:mt-0;
+    > img {
+      @apply w-full;
+    }
+  }
+    .rows {
+      @apply w-full flex flex-col items-center text-center rounded-xl
+             pb-8 lg:mt-0 lg:flex-row lg:justify-start lg:items-start lg:w-1/2 xl:pl-12;
+      .columns {
+        @apply lg:flex lg:flex-col lg:items-start;
+      .title {
+        @apply text-center lg:w-80 md:px-16 lg:text-start lg:px-0;
+        & h1 {
+          @apply text-3xl md:text-4xl;
+        }
+        > h1 span {
+          @apply text-[#0BAEB9];
+        }
+      }
+      .border {
+        @apply w-28 h-1 border-x-2 bg-[#EAEEEF] mx-auto mt-5 rounded-lg md:mt-6 lg:mt-8 xl:mt-7 lg:mx-0;
+      }
+      .text {
+        @apply mt-6 px-4 md:px-14 lg:text-start lg:px-0;
+      }
+      .footer {
+        @apply flex flex-col justify-center mt-8 pb-24 px-20 gap-y-3.5 md:flex-row
+               md:gap-x-4 lg:flex-row lg:gap-x-3 lg:justify-end lg:px-0;
+      }
+    }
+  }
+}

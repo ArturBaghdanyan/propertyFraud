@@ -1,0 +1,51 @@
+.prices {
+  @apply flex flex-col justify-center text-center;
+  .prices_title {
+    @apply flex flex-col text-center mt-24;
+    > h1 {
+      @apply text-2xl md:text-4xl;
+      > span {
+        @apply text-[#0BAEB9];
+      }
+    }
+      .border {
+        @apply w-28 h-1 border-x-2 bg-[#EAEEEF] mx-auto mt-5 rounded-lg md:hidden lg:mt-8 lg:block xl:mt-7;
+      }
+      .price_text {
+        @apply text-center mt-2 text-[#7E818F] md:mt-2 md:mx-24 lg:mx-28 lg:text-xl xl:w-6/12 xl:mx-auto;
+      }
+  }
+  .list {
+    @apply flex flex-col mt-9 gap-y-5 lg:gap-x-6 lg:flex-row;
+    .list_columns {
+      @apply lg:w-full flex flex-col md:flex-row lg:flex-col border-2 rounded-lg;
+      .list_header {
+        @apply h-48 p-6 flex flex-col items-center justify-center bg-[#FAFAFC]
+        md:h-auto md:w-2/5 lg:h-44 lg:w-full;
+        .list_price {
+          @apply text-[#0BAEB9] text-3xl;
+        }
+        .list_title {
+          @apply text-center mt-4;
+          .title_text {
+            @apply text-xl text-[#4E4E4E] lg:text-2xl;
+          }
+        }
+      }
+      .piece {
+        @apply w-full flex flex-col p-6 md:p-10 md:w-3/5 lg:p-5 xl:p-6 lg:w-full;
+        .list_row {
+          @apply flex items-center justify-start h-7 gap-x-2.5 gap-y-2 bg-[#FFFFFF]
+                 lg:gap-y-4 lg:text-xs;
+        }
+        .list_footer {
+          @apply flex items-center justify-center mt-4 h-12 bg-[#0BAEB9] rounded
+          lg:my-8;
+          > button {
+            @apply text-white text-base;
+          }
+        }
+      }
+    }
+  }
+}

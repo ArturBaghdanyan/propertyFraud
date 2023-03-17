@@ -1,0 +1,42 @@
+.target {
+  @apply flex flex-col mt-16;
+  .target_title {
+    @apply w-4/5 mx-auto text-center text-2xl text-teal-500 md:w-3/4 md:text-4xl lg:w-4/5 xl:w-3/6;
+  }
+  .border {
+    @apply w-28 h-1 border-x-2 bg-[#EAEEEF] mx-auto mt-5 rounded-lg md:mt-6 lg:mt-8 xl:mt-7;
+  }
+  .target_text {
+    @apply text-center text-[#7E818F] mx-auto mt-5 w-full h-12 leading-6
+           md:text-xl md:w-3/5 lg:w-1/3 lg:text-xl xl:w-1/3 xl:text-2xl;
+  }
+  .columns {
+    @apply grid grid-cols-1 mx-auto justify-center text-center
+           self-end lg:grid-rows-6 lg:mt-24 lg:gap-x-16
+           md:grid-rows-5 md:grid-cols-6;
+     .columns_piece {
+      @apply w-4/5 h-72 mt-8 flex flex-col mx-auto lg:row-span-4 md:row-span-3 md:col-span-2;
+      &.item-01 {
+        @apply lg:row-start-1 md:row-start-1;
+      }
+      &.item-02 {
+        @apply md:col-start-3 md:row-start-3;
+      }
+       &.item-03 {
+         @apply md:row-start-1 md:col-start-5;
+       }
+      .image {
+        @apply mx-auto;
+      }
+      .columns_title {
+        @apply font-bold text-[#4E4E4E] mt-6;
+      }
+      .text {
+        @apply text-[#95A1A2] h-11 mt-2;
+      }
+      .number {
+        @apply text-[#EAEEEF] text-5xl not-italic mt-auto;
+      }
+    }
+  }
+}

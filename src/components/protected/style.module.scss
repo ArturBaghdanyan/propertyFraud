@@ -1,0 +1,22 @@
+.protect {
+  @apply flex flex-col items-center mx-auto mt-52 md:w-3/4 lg:w-2/3 xl:w-1/2;
+  .protect_title {
+    @apply text-3xl text-center text-[#4E4E4E] px-4 font-medium md:text-4xl;
+    > h1 span {
+      @apply text-[#0BAEB9];
+    }
+  }
+  .border {
+    @apply w-28 h-1 border-x-2 bg-[#EAEEEF] mx-auto mt-5 rounded-lg md:mt-6 lg:mt-8 xl:mt-7;
+  }
+  .protect_text {
+    @apply mt-5 text-[#95A1A1] text-base text-center xl:text-lg;
+  }
+  .protect_footer {
+    @apply mb-52 w-[350px] h-16 rounded-full bg-[#0BAEB9] flex justify-center self-center
+           md:mx-52 gap-x-2 mt-11;
+    > span {
+      @apply text-white self-center;
+    }
+  }
+}
