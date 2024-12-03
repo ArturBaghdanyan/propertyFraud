@@ -15,7 +15,7 @@ function Protect() {
         <p>
           Time to register and protect your most valuable asset-your Home and
           family. Registration is simple and secure and our technology will
-          identify and register your property in minutes.
+          identifies and register your property in minutes.
         </p>
       </div>
       <div className={style.protect_footer}>
