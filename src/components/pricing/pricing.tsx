@@ -20,7 +20,7 @@ function Pricing() {
             <div className={style.list_header}>
               <div className={style.list_price}>{item.price}</div>
               <div className={style.list_title}>
-                <p className={style.title_text}>{item.title_text}</p>
+                <p className={style.list_title_text}>{item.title_text}</p>
                 <p className="text-[#7E818F]">{item.title_text2}</p>
               </div>
             </div>

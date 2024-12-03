@@ -1,5 +1,5 @@
 import './App.css';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 
 import Family from './components/family/family';
 import Footer from './components/footer/footer';
@@ -15,21 +15,33 @@ import Works from './components/works/works';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 
+// export const myRef = useRef<HTMLDivElement | null>(null);
+// export const propertyRef = useRef<HTMLDivElement | null>(null);
+// export const pricingRef = useRef<HTMLDivElement | null>(null);
+// export const contactRef = useRef<HTMLDivElement | null>(null);
+
 function App() {
   const [isHeaderFixed, setIsHeaderFixed] = useState<boolean>(false);
+
   return (
     <div className="App">
       <Header isHeaderFixed={isHeaderFixed} />
       <Address setIsHeaderFixed={setIsHeaderFixed} />
       <TargetProperty />
       <Works />
-      <Victims />
+      <div>
+        <Victims />
+      </div>
       <Protect />
       <MyList />
       <Protection />
-      <Pricing />
+      <div>
+        <Pricing />
+      </div>
       <Family />
-      <Footer />
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }

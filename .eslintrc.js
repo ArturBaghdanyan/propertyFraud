@@ -9,6 +9,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
+    "plugin:react-hooks/recommended"
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -20,6 +21,9 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'import'],
   rules: {
+
+      "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+      "react-hooks/exhaustive-deps": "warn", // Checks effect dependencies
     'prettier/prettier': [
       'error',
       {

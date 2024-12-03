@@ -16,6 +16,7 @@ const Address: FC<AddressProps> = ({ setIsHeaderFixed }) => {
   const ref = useRef(null);
 
   const isVisible = useIsVisible(ref);
+
   useEffect(() => {
     setIsHeaderFixed(!isVisible);
   }, [isVisible]);

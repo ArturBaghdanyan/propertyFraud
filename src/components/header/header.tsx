@@ -1,5 +1,6 @@
-import { FC, useState } from 'react';
+import { FC, RefObject, useState } from 'react';
 
+// import { contactRef, myRef, pricingRef, propertyRef } from '../../App';
 import close from '../../assets/header_icons/close.png';
 import logo_colored from '../../assets/header_icons/logo_colored.svg';
 import logo_white from '../../assets/header_icons/logo_white.svg';
@@ -14,17 +15,17 @@ type HeaderProps = {
 
 const Header: FC<HeaderProps> = ({ isHeaderFixed }) => {
   const [isMobileMenuOpened, setIsMobileMenuOpened] = useState(false);
+
   function handleClick() {
     setIsMobileMenuOpened(!isMobileMenuOpened);
   }
-
-  const menu = ['Home', 'Property Fraud', 'FAQ', 'Contact'];
 
   const showElement = isHeaderFixed ? (
     <img src={menu_black} alt="menu" />
   ) : (
     <img src={menu_white} alt="menu" />
   );
+
   return (
     <>
       <div className={`${style.root} ${isHeaderFixed ? style.sticky : ''}`}>
@@ -36,13 +37,6 @@ const Header: FC<HeaderProps> = ({ isHeaderFixed }) => {
               <img src={logo_white} alt="guardian" />
             )}
           </div>
-          <nav
-            className={`${style.nav} ${isHeaderFixed ? style.scroll_nav : ''}`}
-          >
-            {menu.map((list, key) => (
-              <p key={key}>{list}</p>
-            ))}
-          </nav>
           <div className={`${style.header_menu}`}>
             <div className={`${style.header_registration}`}>
               <div
@@ -75,11 +69,12 @@ const Header: FC<HeaderProps> = ({ isHeaderFixed }) => {
               <img src={close} alt="close" />
             </button>
           </div>
-          <nav>
-            {menu.map((list, key) => (
-              <p key={key}>{list}</p>
-            ))}
-          </nav>
+          <ul className={style.header_nav}>
+            <li>Home</li>
+            <li>Property Fraud</li>
+            <li>FAQ</li>
+            <li>Contact</li>
+          </ul>
         </div>
       )}
     </>

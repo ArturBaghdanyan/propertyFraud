@@ -9,7 +9,7 @@
       @apply text-white;
     }
     .nav {
-      @apply hidden lg:text-white lg:flex lg:items-center lg:mx-auto lg:text-white lg:gap-x-6;
+      @apply hidden lg:text-white lg:flex lg:items-center lg:mx-auto lg:gap-x-6;
       > p {
         @apply lg:border-b-2;
       }
@@ -62,7 +62,7 @@
       @apply w-5 h-5;
     }
   }
-  nav {
+  .nav {
     @apply flex flex-col m-auto gap-y-5 items-center mt-12 text-xl;
   }
 }

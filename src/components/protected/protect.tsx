@@ -1,6 +1,7 @@
 import stroke from '../../assets/protect_icon/stroke.svg';
 
 import style from './style.module.scss';
+
 function Protect() {
   return (
     <div className={style.protect}>
